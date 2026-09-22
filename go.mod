@@ -1,4 +1,4 @@
-module tekkno.co.za/mmmigrate
+module lib.tekkno.co.za/mmmigrate
 
 go 1.26.4
 
