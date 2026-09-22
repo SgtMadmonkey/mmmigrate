@@ -25,6 +25,11 @@ func Register(up, down func(tx *sql.Tx) error) {
 			panic(fmt.Sprintf("migrate: duplicate migration name %s (from %s)", name, file))
 		}
 	}
+	registry = append(registry, Migration{
+		Name: name,
+		Up:   up,
+		Down: down,
+	})
 }
 
 func parseName(file string) string {
