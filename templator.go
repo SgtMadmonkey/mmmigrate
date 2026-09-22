@@ -15,11 +15,11 @@ const migrationTemplate = `package migrations
 import (
 	"database/sql"
 
-	"tekkno.co.za/dnd-hub/internal/migrate"
+	"lib.tekkno.co.za/mmmigrate"
 )
 
 func init() {
-	migrate.Register(
+	mmmigrate.Register(
 		//Up
 		func(tx *sql.Tx) error {
 			//TODO: up	
