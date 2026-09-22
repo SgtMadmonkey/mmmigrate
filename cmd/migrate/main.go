@@ -7,7 +7,7 @@ import (
 	"os"
 
 	_ "github.com/jackc/pgx/v5/stdlib"
-	"tekkno.co.za/mmmigrate"
+	"lib.tekkno.co.za/mmmigrate"
 )
 
 func main() {
